@@ -25,9 +25,12 @@ while True:
         print(f"Result: {num1} * {num2} = {result}")
         
     elif choice == "4":
-        result = num1 / num2 
-        print(f"Result: {num1} / {num2} = {result}")
-        
+        if num2 == 0:
+            print("Undefined")
+        else:
+            result = num1 / num2 
+            print(f"Result: {num1} / {num2} = {result}")
+            
     else: 
         print("Invalid Operation")
 
